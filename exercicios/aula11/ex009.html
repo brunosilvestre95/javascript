@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio País JS</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 139, 0.493);
+            font-family: helvetica, sans-serif, arial;
+            font-size: 1.5em;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1>Olá, Mundo!</h1>
+        <h2>Sistema de Verificação de Nacionalidade</h2>
+        <h3>Informe sua nacionalidade</h3>
+        <p>Por favor, digite sua nacionalidade abaixo e clique em 'Verificar'. <br>
+        <p>Por favor, certifique-se de digitar corretamente a sua nacionalidade para obter o resultado correto.</p>
+
+    <form id="nacionalidade-form">
+        <label for="txtp">Nacionalidade:</label>
+        <input type="text" name="txtp" id="txtp">
+        <input type="button" value="Verificar" onclick="verificarnacionalidade()">
+    </form>
+        <div id="resu">
+            <h2>Resultado</h2>
+            <p id="resp"></p>
+            <p id="mensagemapoio"></p>
+        </div>
+        <script>
+/*
+var país = 'Brasil'
+console.log(`Vivendo em ${país}`)
+if (país != 'Brasil'){
+    console.log('Você é Brasileiro!')
+} else {
+    console.log('Você é Estrangeiro!')
+}
+*/
+            function verificarnacionalidade(){
+                var txtp = window.document.querySelector('input#txtp').value.toLowerCase()
+                var resp = window.document.querySelector('p#resp')
+                var nac = Text(txtp.value)
+                
+                if (txtp === 'brasil' || txtp === 'brasileiro' || txtp === 'brasileira') {
+                    resp.textContent = 'Você é brasileiro!'
+                } else {
+                    resp.textContent = 'Você é imigrante!'
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+Fórum Curso JavaScript
+
+
+extensão do VSCode Liver Server
+https://www.estudonauta.com/foruns/topic/javascript-09-introducao-ao-dom-n-existe-mais-o-watch-in-chrome/
+
+
+
+
+Extensão Live Server para o Chrome
+https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj?pli=1
+
+
+Extensão: node.js exec
+
+
+Resposta do moderador para configuração do VSCode com o Live Server instalado nos dois apps:
+
+Ola, pode sim, caso ja tenha instalado e esteja no chrome, siga essas instruções:
+
+Para mudar o navegador padrão que o Live Server utiliza, você pode seguir os seguintes passos:
+
+Abra o Visual Studio Code
+Clique em “File” (Arquivo) no menu superior
+Selecione “Preferences” (Preferências)
+Clique em “Settings” (Configurações)
+Na barra de busca, digite “liveServer.settings”
+Encontre a opção “Live Server > Settings:CustomBrowser” e escolha o browser que deseja.
+Feito isso, o Live Server abrirá o navegador que você definiu como padrão.
+
+
+Comentário de aluno:
+Live Server funcionou , testei agora pouco, tem tambem a extensao para Chrome com nome: live Serve Web Extension, e so procurar direto na loja do Google Chrome.
+Link da extensao na loja do Chrome
+Chrome : https://chrome.google.com/webstore/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj/
+Assim instalando o LIve Server no VSCODE e esta extensao tudo vai funcionar igual ao video para plugin “Watch in Chorme”
+Vale também o atalho para abrir no html aberto “CTRL + shift + P “, vai abrir o menu em cima no VSCODE digite maior > se nao tiver e digite “Live server “e escolha open Wiht Live Server.

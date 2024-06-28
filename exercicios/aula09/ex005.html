@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Helvetica;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+    <div id="msg">Clique em mim</div>
+<!--Abaixo a tag do Script de JavaScript-->
+    <script>
+            var corpo = window.document.body
+            var p1 = window.document.body
+
+            var d = window.document.querySelector('div#msg')
+            d.style.color = 'yellow'
+            d.style.background = 'darkblue'
+
+        //window.document.write('Olá, Mundo!') escreve olá mundo no site
+
+        //window.document.write(window.document.charset) mostra qual é meu UTF no site
+
+        //window.document.write(window.document.URL) mostra qual é a URL do site
+
+        /* var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+            dentro do parenteses o 0 seleciona o primeiro parágrafo,
+                copiando o conteúdo do primeiro parágrafo e escrevendo no site */
+
+        /*Alterando cor de Fundo
+        getElementsByTagName('p')[1]
+        corpo.style.background = 'black'*/
+
+        //p1.style.color = 'blue'
+        //document.write(p1.innerHTML)//dessa forma ele copia a imagem com o código HTML
+        //o innerText copia apenas os textos
+        
+        /*Altera um objeto com seleção
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'*/
+
+    </script>
+</body>
+</html>
