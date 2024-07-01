@@ -32,24 +32,30 @@
             <p id="mensagemapoio"></p>
         </div>
         <script>
-/*
+/*  exercício anterior feito no nodejs
 var país = 'Brasil'
 console.log(`Vivendo em ${país}`)
 if (país != 'Brasil'){
     console.log('Você é Brasileiro!')
 } else {
     console.log('Você é Estrangeiro!')
-}
-*/
-            function verificarnacionalidade(){
+} */
+            function verificarnacionalidade() {
                 var txtp = window.document.querySelector('input#txtp').value.toLowerCase()
-                var resp = window.document.querySelector('p#resp')
-                var nac = Text(txtp.value)
+                var resp = window.document.querySelector('p#resp');
                 
-                if (txtp === 'brasil' || txtp === 'brasileiro' || txtp === 'brasileira') {
-                    resp.textContent = 'Você é brasileiro!'
+                if (txtp === 'brasil') {
+                    resp.textContent = 'Você é brasileiro(a)!';
+                    mensagemapoio.textcontent = 'Seja Bem-Vindo(a)! Obrigado por usar nosso sistema.';
+                } else if (txtp === 'brasileira') {
+                    resp.textContent = 'Você é brasileira!';
+                    mensagemapoio.textContent = 'Seja Bem-Vinda! Obrigado por usar nosso sistema.';
+                } else if (txtp === 'brasileiro') {
+                    resp.textContent = 'Você é brasileiro!';
+                    mensagemapoio = 'Seja Bem-Vindo! Obrigado por usar nosso sistema.';
                 } else {
-                    resp.textContent = 'Você é imigrante!'
+                    resp.textContent = 'Você é imigrante!';
+                    mensagemapoio.innerHTML = 'Seja Bem-Vindo! Obrigado por usar nosso sistema.<br> Espero que tenha uma viagem segura pelo Brasil!';
                 }
             }
         </script>
